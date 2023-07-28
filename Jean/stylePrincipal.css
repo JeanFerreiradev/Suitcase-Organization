@@ -2,3 +2,129 @@
     font-family: "Inter";
     src: url("C://Windows//Fonts//Inter") format("ttf");
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #C8AF97;
+    font-family: "Inter";
+}
+
+#header {
+    background-color: #B2957B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #000;
+    height: 120px;
+    font-size: 20px;
+}
+
+#conteudo {
+    margin: 48px;
+}
+
+#brownSquare {
+    display: flex;
+    color: white;
+    background-color: #34231A;
+    height: 356px;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 85px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#texto1 {
+    margin-top: 80px;
+    display: flex;
+    color: #34231A;
+    font-size: 40px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+#linha {
+    display: flex;
+    color: white;
+    margin-top: 158px;
+    height: 80px;
+    border-bottom: 1px solid #000;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cartaoIdentidade {
+    width: 57px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+#barCode {
+    width: 57px;
+    height: 57px;
+    flex-shrink: 0;
+}
+
+#paperIcon {
+    width: 33px;
+    height: 38px;
+    flex-shrink: 0;
+}
+
+#simboloMais {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.tituloArquivo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 81px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.tituloArquivo p {
+    margin-left: 11px;
+}
+
+.tituloLinha {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 65px;
+}
+
+.tituloLinha hr {
+    margin-left: 5px;
+    border-radius: 100px;
+    background-color: #324D2E;
+    border: #324D2E;
+    width: 355px;
+    height: 12px;
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: #34231A;
+    flex-shrink: 0;
+    margin-top: 1350px;
+    display: flex;
+    height: 333px;
+}
