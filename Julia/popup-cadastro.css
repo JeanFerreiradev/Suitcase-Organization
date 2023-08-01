@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* formulário cadastro */
+
+.cadastro-box {
+    display: flex;
+    width: 555px;
+    height: 953px;
+    border-radius: 22px;
+    flex-direction: column;
+    align-items: center;
+    background: #34231A;
+    box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.32);
+
+}
+
+#img-cadeado {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    margin-top: 46px;
+}
+
+.formulario-cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 465px;
+    margin-top: 30px;
+
+}
+
+input {
+    margin-top: 40px;
+    height: 49px;
+    width: 465px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    background: #F5F5F5;
+    padding: 15px;
+    font-weight: 700;
+    font-family: "Inter";
+    color: #969696;
+
+}
+input::placeholder{
+    color:#969696;
+}
+
+form [type="submit"] {
+    width: 233px;
+    height: 71px;
+    border-radius: 10px;
+    background: #664C3E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+form [type="submit"]hover {
+    cursor: pointer;
+}
+select {
+    font-family: "Inter";
+    width: 465px;
+    height: 49px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 46px;
+    color: #969696;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 15px;
+}
