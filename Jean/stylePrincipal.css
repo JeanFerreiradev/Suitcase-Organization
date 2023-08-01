@@ -40,7 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 #texto1 {
@@ -55,7 +55,7 @@ body {
 #linha {
     display: flex;
     color: white;
-    margin-top: 158px;
+    margin-top: 140px;
     height: 80px;
     border-bottom: 1px solid #000;
     flex-direction: row;
@@ -83,7 +83,7 @@ body {
 
 #simboloMais {
     width: 40px;
-    height: 40px;
+    height: 43px;
     flex-shrink: 0;
 }
 
@@ -127,4 +127,86 @@ footer {
     margin-top: 1350px;
     display: flex;
     height: 333px;
+}
+
+.texto2 {
+    margin-top: 35px;
+    display: flex;
+    color: #34231A;
+    font-size: 32px;
+    font-weight: 600;
+    justify-content: flex-start;
+}
+
+#acesseAqui {
+    display: flex;
+    background: #34231A;
+    margin-top: 45px;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 297px;
+    height: 105px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#acesseAqui:hover {
+    transform: translateY(-5px);
+}
+
+#acesseAqui img {
+    margin-left: 9px;
+    width: 42px;
+    height: 42.5px;
+    transform: rotate(134.5deg);
+    flex-shrink: 0;
+}
+
+#conteudo-sobreNos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 985.5px;
+}
+
+#sobreNos {
+    margin-top: 70px;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 80px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+#sobreTxt {
+    margin-top: 70px;
+    margin-bottom: 137px;
+    width: 906px;
+    height: 290px;
+    flex-shrink: 0;
+    color: #34231A;
+    text-align: justify;
+    text-indent: 35px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#imagemPc {
+    width: 704px;
+    height: 919.5px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 200px 0px;
+}
+
+.circle{
+    background-color: #34231A;
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
 }
