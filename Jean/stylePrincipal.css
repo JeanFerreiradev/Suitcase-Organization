@@ -70,55 +70,54 @@ header {
 }
 
 #barCode {
-    width: 57px;
-    height: 57px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
 }
 
 #paperIcon {
-    width: 33px;
+    width: 28px;
     height: 38px;
     flex-shrink: 0;
 }
 
 #simboloMais {
-    width: 40px;
-    height: 43px;
+    width: 38px;
+    height: 38px;
     flex-shrink: 0;
 }
 
 .tituloArquivo {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    height: 81px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 92px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     font-size: 32px;
     font-weight: 600;
     cursor: pointer;
 }
 
-.tituloArquivo p {
-    margin-left: 11px;
+#primeiro{
+    margin-top: 28px;
 }
 
-.tituloLinha {
-    margin-top: 27px;
+.titulo-imagem {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 65px;
+    flex-direction: row;
+    gap: 11px;
+    align-items: center;
 }
 
-.tituloLinha hr {
-    margin-left: 5px;
+#bar {
     border-radius: 100px;
     background-color: #324D2E;
     border: #324D2E;
-    width: 355px;
+    width: 411px;
     height: 12px;
     flex-shrink: 0;
+    transition: all 0.3s;
 }
 
 .texto2 {

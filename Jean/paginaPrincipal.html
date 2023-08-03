@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylePrincipal.css">
+    <link rel="shortcut icon" href="/Icons/canguruLogo.png" type="image/x-icon">
+    <script src="Principal.js"></script>
     <title>Página principal</title>
 </head>
 
@@ -21,24 +23,30 @@
         </div>
         <div id="texto1">Site que viabiliza a organização de arquivos pessoais</div>
         <div id="linha">
-            <section class="tituloArquivo">
-                <img src="/Icons/cartaoIdentidade.png" alt="cartaoIdentidade" id="cartaoIdentidade">
-                <div class="tituloLinha">
+            <section class="tituloArquivo" id="primeiro" onclick="moveBar(this)">
+                <div class="titulo-imagem">
+                    <img src="/Icons/cartaoIdentidade.png" alt="cartaoIdentidade" id="cartaoIdentidade">
                     <p>Documentos pessoais</p>
-                    <hr>
+                </div>
+                <hr id="bar">
+            </section>
+            <section class="tituloArquivo" onclick="moveBar(this)">
+                <div class="titulo-imagem">
+                    <img src="/Icons/barcode.png" alt="barCode" id="barCode">
+                    <p>Comprovantes</p>
                 </div>
             </section>
-            <section class="tituloArquivo">
-                <img src="/Icons/barcode.png" alt="barCode" id="barCode">
-                <p>Comprovantes</p>
+            <section class="tituloArquivo" onclick="moveBar(this)">
+                <div class="titulo-imagem">
+                    <img src="/Icons/paper_icon.png" alt="paperIcon" id="paperIcon">
+                    <p>Notas fiscais</p>
+                </div>
             </section>
-            <section class="tituloArquivo">
-                <img src="/Icons/paper_icon.png" alt="paperIcon" id="paperIcon">
-                <p>Notas fiscais</p>
-            </section>
-            <section class="tituloArquivo">
-                <img src="/Icons/SimboloMais.png" alt="simboloMais" id="simboloMais">
-                <p>Crie sua pasta</p>
+            <section class="tituloArquivo" onclick="moveBar(this)">
+                <div class="titulo-imagem">
+                    <img src="/Icons/SimboloMais.png" alt="simboloMais" id="simboloMais">
+                    <p>Crie sua pasta</p>
+                </div>
             </section>
         </div>
         <div class="texto2">Categoria exclusiva para armazenar certidão de nascimento, identidade, CNH, entre outros...
