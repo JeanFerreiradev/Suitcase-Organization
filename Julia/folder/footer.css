@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:333px;
+    background-color: rgba(52, 35, 26, 1);
+    font-family: "Inter";
+    font-size: 64px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+}
+
+
+
+#telefone{
+    width: 65px;
+    height: 73px;
+}
+
+#email{
+    width: 65px;
+    height: 80px;
+}
+#ig{
+    width: 65px;
+    height: 65px;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    margin-top: 80px;
+    margin: 56px;
+ 
+}
