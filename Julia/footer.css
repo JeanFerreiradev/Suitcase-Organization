@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+}
+
 .footer-box{
     display: flex;
     align-items: center;

@@ -18,42 +18,39 @@ header {
 
 
 #logo {
-
+    margin-left: 140px;
     height: 60px;
     width: 60px;
-    margin-left: 30px;
-    padding-left: 30px;
-
+    cursor: pointer;
 }
 
 .suitcase {
-
     width: 143px;
     height: 32px;
     font-weight: 800;
     font-size: 26px;
-
+    cursor: pointer;
 }
 
 .organization {
-
     width: 136px;
     height: 22px;
     font-weight: 500;
     font-size: 16;
     padding-left: 5px;
-
+    cursor: pointer;
 }
 
 .conteudo-secundario-header {
-    padding-right: 20px;
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .home {
     font-size: 16;
-    margin-left: 120px;
+    cursor: pointer;
 }
 
 .login {
@@ -73,15 +70,14 @@ header {
 }
 
 .arquivo-e-icon {
-    margin-left: 113.5px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 
 /*BARRA DE PESQUISA*/
 .search {
-    margin-left: 113.5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -144,13 +140,14 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 113.5px;
+    cursor: pointer;
 }
 
 /*Espaçando section de navegação corretamente*/
 .navegacao {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
