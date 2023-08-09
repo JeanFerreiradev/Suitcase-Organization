@@ -24,20 +24,3 @@ function moveBar(clickedDiv) {
         texto.innerText = "Nesta seção você consegue criar sua própria categoria para armazenar diversos tipos de arquivos.";
     }
 }
-
-// function changeTxt(clickedDiv) {
-//     var divs = document.getElementsByClassName("tituloArquivo");
-//     if (clickedDiv == divs[0]) {
-//         var elementoP = clickedDiv.querySelector('p');
-//         elementoP.textContent = "Categoria exclusiva para armazenar certidão de nascimento, identidade, CNH, entre outros...";
-//     } else if (clickedDiv == divs[1]) {
-//         var elementoP = clickedDiv.querySelector('p');
-//         elementoP.textContent = "Nesta aba é possível guardar diversos tipos de comprovantes em categorias diferentes.";
-//     } else if (clickedDiv == divs[2]) {
-//         var elementoP = clickedDiv.querySelector('p');
-//         elementoP.textContent = "Guarde aqui suas notas fiscais para acessá-las facilmente.";
-//     } else {
-//         var elementoP = clickedDiv.querySelector('p');
-//         elementoP.textContent = "Nesta seção você consegue criar sua própria categoria para armazenar diversos tipos de arquivos.";
-//     }
-// }

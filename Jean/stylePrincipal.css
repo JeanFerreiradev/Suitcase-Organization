@@ -13,20 +13,11 @@ body {
     font-family: "Inter";
 }
 
-header {
-    background-color: #B2957B;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: 1px solid #000;
-    height: 120px;
-    font-size: 20px;
-}
-
 #conteudo {
     margin: 48px;
 }
+
+/*Conteudo 1*/
 
 #brownSquare {
     display: flex;
@@ -51,6 +42,8 @@ header {
     font-weight: 600;
     justify-content: center;
 }
+
+/*Conteudo 2*/
 
 #linha {
     display: flex;
@@ -99,7 +92,7 @@ header {
     cursor: pointer;
 }
 
-#primeiro{
+#primeiro {
     margin-top: 28px;
 }
 
@@ -159,6 +152,8 @@ header {
     flex-shrink: 0;
 }
 
+/*Conteudo 3*/
+
 #conteudo-sobreNos {
     display: flex;
     flex-direction: row;
@@ -196,20 +191,20 @@ header {
     border-radius: 0px 0px 200px 0px;
 }
 
-#caracteristicas{
+#caracteristicas {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.circle{
+.circle {
     background-color: #34231A;
     width: 21px;
     height: 21px;
     border-radius: 100%;
 }
 
-.caracteristicas-texto{
+.caracteristicas-texto {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -218,6 +213,8 @@ header {
     font-weight: 600;
     gap: 30px;
 }
+
+/*Footer*/
 
 footer {
     background-color: #34231A;
