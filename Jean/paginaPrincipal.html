@@ -4,9 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="stylePrincipal.css">
     <link rel="stylesheet" href="/Julia/header.css">
     <link rel="stylesheet" href="/Julia/footer.css">
+    <link rel="stylesheet" href="/Julia/popup-arquivos.css">
+    <link rel="stylesheet" href="/Julia/criar-pasta.css">
+    <link rel="stylesheet" href="/Julia/popup-login.css">
+    <link rel="stylesheet" href="/Julia/popup-cadastro.css">
     <link rel="shortcut icon" href="/Icons/canguruLogo.png" type="image/x-icon">
     <script src="Principal.js"></script>
     <title>Suitcase Organization</title>
@@ -29,7 +34,7 @@
             <div class="conteudo-secundario-header">
                 <a class="home">HOME</a>
 
-                <div class="arquivo-e-icon">
+                <div id="arquivo-e-icon">
                     <img src="/Icons/folder_icon.png" id="folder" alt="ícone de pasta">
                     <a class="arquivos">ARQUIVOS</a>
                 </div>
@@ -55,6 +60,94 @@
         </section>
     </header>
 
+    <!--Pop-up's-->
+    <dialog class="popup" id="abaArquivo">
+        <section id="arquivos-box">
+            <div class="input-wrapper">
+                <i class="fa fa-user" style="font-size: 18px;"></i>
+                <input type="button" value="DOCUMENTOS PESSOAIS">
+            </div>
+            <div class="input-wrapper">
+                <i class="fa fa-barcode" style="font-size: 18px;"></i>
+                <input type="button" value="COMPROVANTES">
+            </div>
+            <div class="input-wrapper">
+                <i class="fa fa-file" style="font-size: 18px;"></i>
+                <input type="button" value="NOTAS FISCAIS">
+            </div>
+            <div class="input-wrapper" id="criarPastaBtn">
+                <i class="fa-solid fa-circle-plus" style="font-size: 18px;"></i>
+                <input type="button" value="CRIE SUA PASTA">
+            </div>
+        </section>
+    </dialog>
+    <dialog class="popup" id="abaCriarPasta">
+        <div class="criar-box">
+            <p> Crie sua pasta </p>
+            <form>
+                <input id="nomeInputCriarPasta" type="text" placeholder="Nome" required>
+                <select id="tipo-de-arquivo" required>
+                    <option value="" disabled selected hidden>Tipo de arquivo</option>
+                    <option>.zip</option>
+                    <option>.jpg</option>
+                    <option>.doc</option>
+                    <option>.png</option>
+                    <option>.pdf</option>
+                </select>
+                <input type="submit" value="Criar">
+            </form>
+        </div>
+    </dialog>
+    <dialog class="popup" id="abaLogin">
+        <div class="login-box">
+            <i class="fa-solid fa-circle-user" id="img-circle-user-login"></i>
+            <div class="formulario-login">
+                <form class="email-senha">
+                    <input type="text" placeholder="E-mail ou celular" class="input-login">
+                    <input type="password" placeholder="Senha" class="input-login">
+                    <p class="texto-link-login">Esqueci minha senha</p>
+                </form>
+            </div>
+            <div>
+                <form id="botao-entrar">
+                    <input type="submit" value="Entrar" class="input-login">
+                    <p class="texto-link-login" id="cadastrarBtn">Não tem uma conta? Cadastre-se</p>
+                </form>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="popup" id="abaCadastro">
+        <div class="cadastro-box">
+            <section id="user-close">
+                <i class="fa-solid fa-circle-user" id="img-circle-user"></i>
+                <i class="fa-solid fa-x" id="icon-close"></i>
+            </section>
+            <div>
+                <form id="formulario-cadastro">
+                    <input type="text" placeholder="Nome" required class="input-cadastro">
+                    <input type="text" placeholder="Sobrenome" required class="input-cadastro">
+                    <input type="email" placeholder="E-mail" required class="input-cadastro">
+                    <input type="password" placeholder="Senha" required class="input-cadastro">
+                    <input type="password" placeholder="Confirmar senha" required class="input-cadastro">
+                    <select id="localizacao" required>
+                        <option>Localização</option>
+                        <option>Norte</option>
+                        <option>Nordeste</option>
+                        <option>Centro-Oeste</option>
+                        <option>Sudeste</option>
+                        <option>Sul</option>
+                        <option>Exterior</option>
+                    </select>
+                    <input type="tel" placeholder="Telefone: (XX)XXXXX-XXXX" required class="input-cadastro">
+                </form>
+            </div>
+            <div class="botao-criar">
+                <form>
+                    <input type="submit" value="Criar">
+                </form>
+            </div>
+        </div>
+    </dialog>
     <!--Conteudo 1-->
 
     <main id="conteudo">
@@ -66,31 +159,25 @@
         <!--Conteudo 2-->
 
         <div id="linha">
-            <section class="tituloArquivo" id="primeiro" onclick="moveBar(this)">
-                <div class="titulo-imagem">
-                    <img src="/Icons/cartaoIdentidade.png" alt="cartaoIdentidade" id="cartaoIdentidade">
+            <ul>
+                <li class="icon-title">
+                    <i class="fa-solid fa-user" id="cartaoIdentidade"></i>
                     <p>Documentos pessoais</p>
-                </div>
-                <hr id="bar">
-            </section>
-            <section class="tituloArquivo" onclick="moveBar(this)">
-                <div class="titulo-imagem">
-                    <img src="/Icons/barcode.png" alt="barCode" id="barCode">
+                </li>
+                <li class="icon-title">
+                    <i class="fa-solid fa-barcode" id="barCode"></i>
                     <p>Comprovantes</p>
-                </div>
-            </section>
-            <section class="tituloArquivo" onclick="moveBar(this)">
-                <div class="titulo-imagem">
-                    <img src="/Icons/paper_icon.png" alt="paperIcon" id="paperIcon">
+                </li>
+                <li class="icon-title">
+                    <i class="fa fa-file" id="paperIcon"></i>
                     <p>Notas fiscais</p>
-                </div>
-            </section>
-            <section class="tituloArquivo" onclick="moveBar(this)">
-                <div class="titulo-imagem">
-                    <img src="/Icons/SimboloMais.png" alt="simboloMais" id="simboloMais">
+                </li>
+                <li class="icon-title">
+                    <i class="fa-solid fa-circle-plus" id="simboloMais"></i>
                     <p>Crie sua pasta</p>
-                </div>
-            </section>
+                </li>
+                <hr id="bar">
+            </ul>
         </div>
         <div class="texto2">Categoria exclusiva para armazenar certidão de nascimento, identidade, CNH, entre outros...
         </div>
@@ -106,10 +193,10 @@
                 <div id="sobreNos">Sobre nós</div>
                 <div id="sobreTxt">
                     <p>
-                        A Suitcase Organization foi criada com o intuito de facilitar a organização de documentos
+                        A Suitcase Organization foi criada com o intuito de facilitar a organização de arquivos
                         pessoais.
                         Com um
-                        design mais acessível, visamos facilitar a usabilidade dos usuários para que todos consigam
+                        design mais intuitivo, visamos facilitar a usabilidade dos usuários para que todos consigam
                         organizar seus
                         documentos de forma rápida e simples.
                     </p>
@@ -153,5 +240,47 @@
     </footer>
 
 </body>
+
+<script>
+    var arquivoBtn = document.getElementById("arquivo-e-icon");
+    arquivoBtn.addEventListener('click', function () {
+        openAbaArquivos();
+    });
+
+    var criarPastaBtn = document.getElementById("criarPastaBtn");
+    criarPastaBtn.addEventListener('click', function () {
+        openAbaCriarPasta();
+        //criarPasta();
+    });
+
+    var entrarCadastrarBtn = document.querySelector(".login");
+    entrarCadastrarBtn.addEventListener('click', function () {
+        openAbaLogin();
+    });
+
+    var cadastrarBtn = document.getElementById("cadastrarBtn");
+    cadastrarBtn.addEventListener('click', function () {
+        openAbaCadastro();
+    });
+
+    var iconClose = document.getElementById("icon-close");
+    iconClose.addEventListener('click', function () {
+        closeAbaCadastro();
+    });
+
+    const items = document.getElementsByClassName("icon-title");
+    for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener('mouseover', function () {
+            changeTxt(this);
+        });
+
+        items[i].addEventListener('mouseout', function () {
+            restoreTxt();
+        });
+    }
+
+    // Chamando centerDiv() uma vez para centralizar a div inicialmente
+    centerDiv();
+</script>
 
 </html>

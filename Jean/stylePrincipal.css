@@ -9,8 +9,13 @@
 }
 
 body {
+    position: relative;
     background-color: #C8AF97;
     font-family: "Inter";
+}
+
+.popup {
+    z-index: 1001;
 }
 
 #conteudo {
@@ -46,75 +51,93 @@ body {
 /*Conteudo 2*/
 
 #linha {
-    display: flex;
     color: white;
-    margin-top: 140px;
-    height: 80px;
     border-bottom: 1px solid #000;
+    height: 80px;
+    position: relative;
+    width: 1807px;
+    top: 165px;
+}
+
+#linha ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-title {
+    display: flex;
     flex-direction: row;
+    gap: 11px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
+    flex: 1;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    transition: 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    font-size: 32px;
+    height: 75px;
+}
+
+.icon-title:hover {
+    color: #34231A;
+}
+
+.icon-title:hover:nth-of-type(2)~#bar {
+    left: 25%;
+}
+
+.icon-title:hover:nth-of-type(3)~#bar {
+    left: 50%;
+}
+
+.icon-title:hover:nth-of-type(4)~#bar {
+    left: 75%;
+}
+
+#bar {
+    width: 25%;
+    border-radius: 100px;
+    border: #324D2E;
+    background-color: #324D2E;
+    height: 12px;
+    position: absolute;
+    top: 75px;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
 }
 
 #cartaoIdentidade {
-    width: 57px;
-    height: 40px;
+    font-size: 40px;
+    color: #34231A;
     flex-shrink: 0;
 }
 
 #barCode {
-    width: 40px;
-    height: 40px;
+    font-size: 40px;
+    color: #34231A;
     flex-shrink: 0;
 }
 
 #paperIcon {
-    width: 28px;
-    height: 38px;
+    font-size: 40px;
+    color: #34231A;
     flex-shrink: 0;
 }
 
 #simboloMais {
-    width: 38px;
-    height: 38px;
+    font-size: 40px;
+    color: #34231A;
     flex-shrink: 0;
-}
-
-.tituloArquivo {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: column;
-    height: 92px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    font-size: 32px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-#primeiro {
-    margin-top: 28px;
-}
-
-.titulo-imagem {
-    display: flex;
-    flex-direction: row;
-    gap: 11px;
-    align-items: center;
-}
-
-#bar {
-    border-radius: 100px;
-    background-color: #324D2E;
-    border: #324D2E;
-    width: 411px;
-    height: 12px;
-    flex-shrink: 0;
-    transition: all 0.3s;
 }
 
 .texto2 {
-    margin-top: 35px;
+    margin-top: 180px;
     display: flex;
     color: #34231A;
     font-size: 32px;
