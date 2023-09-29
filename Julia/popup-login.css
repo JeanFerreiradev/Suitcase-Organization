@@ -3,31 +3,52 @@
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+}
+
+#abaLogin {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -66%);
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    overflow: visible;
+}
+
 /* formulário login */
 
 .login-box {
     display: flex;
     font-family: "Inter";
     background-color: rgba(52, 35, 26, 1);
-    width: 672;
-    height: 560;
+    width: 672px;
+    height: 560px;
     border-radius: 22px;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-#img-cadeado {
-    display: flex;
-    width: 80px;
-    height: 80px;
-    margin-top: 46px;
+.login-box p {
+    cursor: pointer;
+}
+
+#img-circle-user-login {
+    font-size: 80px;
+    color: white;
 }
 
 .email-senha {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 465px;
-    margin-top: 46px;
+    gap: 20px;
 }
 
 form [type="submit"] {
@@ -35,18 +56,13 @@ form [type="submit"] {
     height: 71px;
     border-radius: 10px;
     background: #664C3E;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
     font-weight: 700;
-
-}
-
-form [type="submit"]hover {
     cursor: pointer;
 }
 
-input {
-    margin-top: 20px;
+.input-login {
     height: 49px;
     width: 465px;
     border-radius: 10px;
@@ -55,28 +71,28 @@ input {
     background: #F5F5F5;
     padding: 15px;
     font-weight: 700;
-   
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-input::placeholder{
-    color:#969696;}
 
-#esqueci-senha {
+input::placeholder {
     color: #969696;
-    font-family: Inter;
+}
+
+.texto-link-login {
+    color: #969696;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 15px;
-    margin-bottom: 20px;
 }
 
-#nao-tem-conta {
-    color: #969696;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-top: 15px;
+.texto-link-login:hover {
+    color: #d9d9d9;
+}
+
+#botao-entrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }

@@ -1,25 +1,23 @@
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="popup-login.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <!--POP-UP LOGIN-->
 <div class="login-box">
-    
-        <div><img src="/Icons/Cadeado.png" id="img-cadeado" alt="Cadeado"></div>
-        <div class="formulario-login">
-            <form class="email-senha">
-                <input type="text" placeholder="E-mail ou celular">
-                <input type="password" senha" placeholder="Senha">
-            </form>
-        </div>
-        <a id="esqueci-senha">Esqueci minha senha</a>
-        <div class="botao-entrar">
-            <form>
-                <input type="submit" value="Entrar">
-            </form>
-        </div>
-        <a id="nao-tem-conta">Não tem uma conta? Cadastre-se</a>
-   
+    <i class="fa-solid fa-circle-user" id="img-circle-user-login"></i>
+    <div class="formulario-login">
+        <form class="email-senha">
+            <input type="text" placeholder="E-mail ou celular" class="input-login">
+            <input type="password" placeholder="Senha" class="input-login">
+            <p class="texto-link-login">Esqueci minha senha</p>
+        </form>
+    </div>
+    <div>
+        <form id="botao-entrar">
+            <input type="submit" value="Entrar" class="input-login">
+            <p class="texto-link-login" id="cadastrarBtn">Não tem uma conta? Cadastre-se</p>
+        </form>
+    </div>
 </div>

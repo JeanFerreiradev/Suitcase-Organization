@@ -2,21 +2,17 @@
 <link rel="stylesheet" href="criar-pasta.css">
 
 <div class="criar-box">
-    <div class="conteudo">
-    <p> Crie sua pasta. </p>
-<input type="text" placeholder="Nome" required>
-<select id="tipo-de-arquivo" required>
-    <option>Tipo de arquivo</option>
-    <option>.zip</option>
-    <option>.jpg</option>
-    <option>.doc</option>
-    <option>.png</option>
-    <option>.pdf</option>
-</select>
-<div class="criar"> 
+    <p> Crie sua pasta </p>
     <form>
+        <input id="nomeInputCriarPasta" type="text" placeholder="Nome" required>
+        <select id="tipo-de-arquivo" required>
+            <option value="" disabled selected hidden>Tipo de arquivo</option>
+            <option>.zip</option>
+            <option>.jpg</option>
+            <option>.doc</option>
+            <option>.png</option>
+            <option>.pdf</option>
+        </select>
         <input type="submit" value="Criar">
     </form>
-</div>
-</div>
 </div>

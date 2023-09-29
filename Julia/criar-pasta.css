@@ -3,54 +3,70 @@
     padding: 0;
 }
 
+*:focus {
+    outline: none;
+}
+
+#abaCriarPasta {
+    position: absolute;
+    top: 140px;
+    left: 970px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    overflow: visible;
+}
+
 /* BOX */
 .criar-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 535px;
     height: 341px;
     border-radius: 22px;
     background-color: rgba(52, 35, 26, 1);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-family: "Inter";
     font-size: 32px;
     font-weight: 700;
     color: rgba(255, 255, 255, 1);
-    
-
 }
 
-.conteudo {
+.criar-box form{
     display: flex;
-    align-items: center;
     flex-direction: column;
-   margin-bottom: 15px;
+    align-items: center;
+    gap: 25px;
 }
 
-input {
-    margin-top: 30px;
-    height: 48px;
+#nomeInputCriarPasta {
     width: 285px;
+    height: 48px;
     border-radius: 10px;
     border: none;
     font-size: 24px;
     background: #F5F5F5;
-    padding: 15px;
     font-weight: 700;
     font-family: "Inter";
-    
-
+    flex-shrink: 0;
+    text-indent: 15px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-input::placeholder{
-    color:#969696;
+
+input::placeholder {
+    color: #969696;
 }
 
 /*CRIAR*/
-form [type="submit"] {   
+form [type="submit"] {
     display: block;
     width: 175px;
     height: 55px;
     border-radius: 10px;
+    border: none;
     background: #664C3E;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #FFF;
@@ -59,23 +75,21 @@ form [type="submit"] {
     font-style: normal;
     font-weight: 700;
     line-height: 29px;
-   
- }
-    
-    form [type="submit"]hover {
-        cursor: pointer;
-    }
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
 
-    /*TIPO DE ARQUIVO*/
-    select {
-        font-family: "Inter";
-        width: 285px;
-        height: 48px;
-        border: none;
-        border-radius: 10px;
-        margin-top: 46px;
-        color: #969696;
-        font-size: 24px;
-        font-weight: 700;
-        padding-left: 15px;
-    }
+/*TIPO DE ARQUIVO*/
+#tipo-de-arquivo {
+    font-family: "Inter";
+    width: 285px;
+    height: 48px;
+    border: none;
+    border-radius: 10px;
+    color: #969696;
+    font-size: 24px;
+    font-weight: 700;
+    text-indent: 13px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}

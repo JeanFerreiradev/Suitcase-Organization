@@ -1,35 +1,32 @@
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="popup-cadastro.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <!--POP-UP CADASTRO-->
 <div class="cadastro-box">
-    <div><img src="/Icons/Cadeado.png" id="img-cadeado" alt="Cadeado"></div>
-    <div class="formulario-cadastro">
-        <form>
-            <input type="text" placeholder="Nome" required>
-            <input type="text" senha" placeholder="Sobrenome" required>
-            <input type="email" placeholder="E-mail" required>
-            <input type="password" placeholder="Senha" required>
-            <input type="password" placeholder="Confirmar senha" required>
-        </form>
-    </div>
+    <section id="user-close">
+        <i class="fa-solid fa-circle-user" id="img-circle-user"></i>
+        <i class="fa-solid fa-x" id="icon-close"></i>
+    </section>
     <div>
-        <select id="localizacao" required>
-            <option>Localização</option>
-            <option>ㅤ</option>
-            <option>Norte</option>
-            <option>Nordeste</option>
-            <option>Centro-Oeste</option>
-            <option>Sudeste</option>
-            <option>Sul</option>
-            <option>Exterior</option>
-        </select>
-    </div>
-    <div>
-        <form class="telefone">
-            <input type="tel" placeholder="Telefone: (XX)XXXXX-XXXX" required>
+        <form id="formulario-cadastro">
+            <input type="text" placeholder="Nome" required class="input-cadastro">
+            <input type="text" placeholder="Sobrenome" required class="input-cadastro">
+            <input type="email" placeholder="E-mail" required class="input-cadastro">
+            <input type="password" placeholder="Senha" required class="input-cadastro">
+            <input type="password" placeholder="Confirmar senha" required class="input-cadastro">
+            <select id="localizacao" required>
+                <option>Localização</option>
+                <option>Norte</option>
+                <option>Nordeste</option>
+                <option>Centro-Oeste</option>
+                <option>Sudeste</option>
+                <option>Sul</option>
+                <option>Exterior</option>
+            </select>
+            <input type="tel" placeholder="Telefone: (XX)XXXXX-XXXX" required class="input-cadastro">
         </form>
     </div>
     <div class="botao-criar">
