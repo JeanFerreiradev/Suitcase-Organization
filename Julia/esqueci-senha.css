@@ -1,0 +1,62 @@
+.esqueci-senha {
+    display: flex;
+    font-family: "Inter";
+    background-color: rgba(52, 35, 26, 1);
+    width: 672;
+    height: 350;
+    border-radius: 22px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#title {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#body {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10;
+
+}
+
+input[type="text"] {
+    margin-top: 40px;
+    height: 49px;
+    width: 465px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    background: #F5F5F5;
+    padding: 15px;
+    font-weight: 700;
+    font-family: "Inter";
+    color: #969696;
+
+}
+
+input[type="submit"] {
+    display: block;
+    width: 175px;
+    height: 55px;
+    border-radius: 10px;
+    background: #664C3E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    margin-top: 10;
+}
+
+input::placeholder {
+    color: #969696;
+}
