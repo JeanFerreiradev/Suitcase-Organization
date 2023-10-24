@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "Inter";
+    src: url("file:///C:/Windows/Fonts/Inter.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-size: 100%;
+    background-color: #C8AF97;
+    font-family: "Inter", sans-serif;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -145,3 +162,93 @@ header {
     flex-direction: row;
     align-items: center;
 }
+.conteudo {
+    margin: 48px;
+    
+    
+}
+
+
+.conteudo-pasta-personalizada {
+   
+        color: #FFF;
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+        height: 200px;   
+        display: flex;
+        flex-direction: row;
+        border-radius: 22px;
+        background: #34231A;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .container {
+        padding: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+    }
+    
+    .box-wrapper {
+        width: calc(25% - 20px);
+        margin-bottom: 20px; /* Adicionando margem inferior para espaço entre as linhas */
+        text-align: center; /* Centraliza o texto dentro da caixa */
+    }
+    
+    .box {
+        width: 100%;
+        height: 221px;
+        border-radius: 22px;
+        background: #34231A;
+        box-sizing: border-box;
+        margin: 10px;
+        display: flex;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        align-items: center; /* Centraliza horizontalmente */
+        position: relative; /* Adiciona posição relativa para alinhar a imagem */
+    }
+    
+    .box-text {
+        margin-top: 10px; /* Espaço entre a caixa e o texto "Nome Arquivo" */
+        font-weight: bold; /* Texto em negrito */
+        color: #000000; /* Cor do texto */
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        
+    }
+    
+    .box-text-arquivo {
+        padding: 45px;
+        font-weight: bold; /* Texto em negrito */
+        color: #FFFFFF; /* Cor do texto */
+        text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        
+        
+    }
+    
+    .box .simboloBranco {
+        
+        width: 78px;
+        height: 73px;
+        position: absolute; /* Posição absoluta para alinhar a imagem */
+        top: 60%; /* Centraliza verticalmente na caixa */
+        left: 50%; /* Centraliza horizontalmente na caixa */
+        transform: translate(-50%, -50%); /* Centraliza a imagem no meio da caixa */
+    }
+    
