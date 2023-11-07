@@ -1,23 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+#abaEsqueciSenha {
+    position: absolute;
+    top: 140px;
+    left: 970px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    overflow: visible;
+}
+
 .esqueci-senha {
     display: flex;
     font-family: "Inter";
     background-color: rgba(52, 35, 26, 1);
-    width: 672;
-    height: 350;
+    width: 672px;
+    height: 350px;
     border-radius: 22px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    gap: 10px;
 }
 
-#title {
+#title-esqueci-senha {
     color: white;
     font-size: 32px;
     font-weight: bold;
 }
 
-#body {
+#body-esqueci-senha {
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -26,7 +46,15 @@
 
 }
 
-input[type="text"] {
+.email-celular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#emailOuCelular {
     margin-top: 40px;
     height: 49px;
     width: 465px;

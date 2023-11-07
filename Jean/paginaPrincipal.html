@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/Julia/criar-pasta.css">
     <link rel="stylesheet" href="/Julia/popup-login.css">
     <link rel="stylesheet" href="/Julia/popup-cadastro.css">
+    <link rel="stylesheet" href="/Julia/esqueci-senha.css">
     <link rel="shortcut icon" href="/Icons/canguruLogo.png" type="image/x-icon">
     <script src="Principal.js"></script>
     <title>Suitcase Organization</title>
@@ -105,11 +106,7 @@
                 <form class="email-senha">
                     <input type="text" placeholder="E-mail ou celular" class="input-login">
                     <input type="password" placeholder="Senha" class="input-login">
-                    <p class="texto-link-login">Esqueci minha senha</p>
-                </form>
-            </div>
-            <div>
-                <form id="botao-entrar">
+                    <p class="texto-link-login" id="esqueci-senha-btn">Redefinir senha</p>
                     <input type="submit" value="Entrar" class="input-login">
                     <p class="texto-link-login" id="cadastrarBtn">Não tem uma conta? Cadastre-se</p>
                 </form>
@@ -146,6 +143,17 @@
                     <input type="submit" value="Criar">
                 </form>
             </div>
+        </div>
+    </dialog>
+    <dialog class="popup" id="abaEsqueciSenha">
+        <div class="esqueci-senha">
+
+            <div id="title-esqueci-senha">Redefinir senha</div>
+            <div id="body-esqueci-senha">Informe seu e-mail ou celular para redefinir sua senha.</div>
+            <form class="email-celular">
+                <input type="text" id="emailOuCelular" placeholder="Insira seu e-mail ou celular">
+                <input type="submit" value="Enviar">
+            </form>
         </div>
     </dialog>
     <!--Conteudo 1-->
@@ -266,6 +274,11 @@
     var iconClose = document.getElementById("icon-close");
     iconClose.addEventListener('click', function () {
         closeAbaCadastro();
+    });
+
+    var esqueciSenhaBtn = document.getElementById("esqueci-senha-btn");
+    esqueciSenhaBtn.addEventListener('click', function () {
+        openAbaEsqueciSenha();
     });
 
     const items = document.getElementsByClassName("icon-title");

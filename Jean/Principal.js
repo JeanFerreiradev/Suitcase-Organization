@@ -75,6 +75,22 @@ function closeAbaCadastro() {
     main.style.filter = 'none';
 }
 
+function openAbaEsqueciSenha() {
+    const abaEsqueciSenha = document.getElementById("abaEsqueciSenha");
+    if (abaEsqueciSenha.open) {
+        abaEsqueciSenha.close();
+    } else {
+        abaEsqueciSenha.show();
+    }
+}
+
+function closeAbaEsqueciSenha() {
+    const main = document.querySelector("main");
+    const abaEsqueciSenha = document.getElementById("abaEsqueciSenha");
+    abaEsqueciSenha.close();
+    main.style.filter = 'none';
+}
+
 function criarPasta() {
     // Aumenta a altura da arquivos-box
     const arquivosBox = document.getElementById("arquivos-box");
